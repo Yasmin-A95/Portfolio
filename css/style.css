@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+* {
+    box-sizing: border-box;
+    overscroll-behavior: none;
+    font-family: 'Rubik', sans-serif;
+}
+
+.outter-container {
+    font-family: sans-serif;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit minmax(200px, 1fr));
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+#intro {
+    background-color: #FFF;
+    text-align: center;
+    height: 100vh;
+}
+
+#intro-text {
+    max-width: 100vw;
+    font-size: 1.5rem;
+    padding-top: 35vh;
+    font-family: 'Rubik', sans-serif;
+    line-height: 2.5rem;
+}
+
+#name {
+    font-family: 'Ubuntu', sans-serif;
+    text-align: left;
+    font-size: 1.5rem;
+    padding-left: 0.5rem;
+    color: rgb(103, 98, 98);
+}
+
+#heading {
+    text-align: center;
+    font-style: normal;
+    color: plum;
+    text-shadow: 0.1rem 0.1rem black;
+}
+
+#projects {
+    color: rgb(103, 98, 98);
+}
+#projects-container {
+    max-width: 100vw;
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+.project-item {
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 90vw;
+    margin: 0;
+    padding: 0;
+}
+
+.project-item:not(:last-child) {
+    margin-right: 10px;
+  }
+  
+
+@media (min-width: 540px) {
+    .container {
+        box-sizing: border-box;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 540px) {
+    #intro {
+        padding: 1rem;
+    }
+
+    #name {
+        text-align: center;
+    }
+}
