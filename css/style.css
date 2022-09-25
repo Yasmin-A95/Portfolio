@@ -82,12 +82,13 @@
     box-sizing: border-box;
     margin: 0 auto;
   }
-}
-@media (min-width: 540px) {
   #intro {
     padding: 1rem;
   }
-  #name {
+  #intro p {
     text-align: center;
+  }
+  img {
+    max-width: 30rem;
   }
 }/*# sourceMappingURL=style.css.map */
