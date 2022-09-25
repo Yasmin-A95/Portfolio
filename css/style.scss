@@ -71,15 +71,14 @@
             flex-direction: column;
             max-width: 90vw;
             padding: 1rem;
+            box-shadow: rgb(0, 0, 0) 0.5rem 0.5rem;
+            margin-bottom: 1rem;
+            margin-right: 1em;
 
             p {
                 line-height: 1.2rem;
                 margin-bottom: 1px;
             }
-        }
-
-        .project-item:not(:last-child) {
-            margin-right: 1em;
         }
 
     }
