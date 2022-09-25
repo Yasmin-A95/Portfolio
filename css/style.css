@@ -82,6 +82,9 @@
   line-height: 1.2rem;
   margin-bottom: 1px;
 }
+#projects #container .project-item img {
+  max-height: 15rem;
+}
 
 #contact {
   padding: 1rem;
@@ -98,8 +101,5 @@
   }
   #intro p {
     text-align: center;
-  }
-  img {
-    max-width: 30rem;
   }
 }/*# sourceMappingURL=style.css.map */

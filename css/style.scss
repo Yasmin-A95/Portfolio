@@ -92,6 +92,10 @@ $grey-text: rgb(103, 98, 98);
                 line-height: 1.2rem;
                 margin-bottom: 1px;
             }
+
+            img {
+                max-height: 15rem;
+            }
         }
 
     }
@@ -114,9 +118,5 @@ $grey-text: rgb(103, 98, 98);
         p {
             text-align: center;
         }
-    }
-
-    img {
-        max-width: 30rem;
     }
 }
