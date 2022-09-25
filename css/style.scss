@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
+$grey-text: rgb(103, 98, 98);
+
+@mixin fancyText {
+    color: plum;
+    text-shadow: 0.1rem 0.1rem black;
+    text-align: center;
+}
+
 * {
     box-sizing: border-box;
     font-family: 'Rubik', sans-serif;
@@ -31,14 +39,13 @@
         text-align: left;
         font-size: 1.5rem;
         padding-left: 0.5rem;
-        color: rgb(103, 98, 98);
+        color: $grey-text;
     }
 
     h1 {
         text-align: center;
         font-style: normal;
-        color: plum;
-        text-shadow: 0.1rem 0.1rem black;
+        @include fancyText;
     }
 }
 
@@ -50,11 +57,16 @@
     padding-bottom: 15vh;
     display: flex;
     flex-direction: column;
-    //-webkit-align-items: center;
 
-    h3,
-    h4 {
+    //-webkit-align-items: center;
+    h3 {
+        font-size: 2rem;
+        text-shadow: 0.1rem 0.1rem black;
         text-align: center;
+    }
+
+    h4 {
+        @include fancyText;
     }
 
     #container {
@@ -87,7 +99,7 @@
 
 #contact {
     padding: 1rem;
-    color: rgb(103, 98, 98);
+    color: $grey-text;
 }
 
 @media (min-width: 540px) {
