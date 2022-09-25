@@ -48,7 +48,6 @@
   padding-bottom: 15vh;
   display: flex;
   flex-direction: column;
-  -webkit-align-items: center;
 }
 #projects h3,
 #projects h4 {
@@ -62,6 +61,8 @@
       scroll-snap-type: x mandatory;
 }
 #projects #container .project-item {
+  display: flex;
+  flex-direction: column;
   background-color: hsla(0deg, 0%, 100%, 0.702);
   color: plum;
   display: flex;
@@ -75,6 +76,11 @@
 #projects #container .project-item p {
   line-height: 1.2rem;
   margin-bottom: 1px;
+}
+
+#contact {
+  padding: 1rem;
+  color: rgb(103, 98, 98);
 }
 
 @media (min-width: 540px) {
