@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 * {
   box-sizing: border-box;
   font-family: "Rubik", sans-serif;
@@ -7,124 +8,69 @@
 header {
   display: flex;
   margin: auto;
-  padding-top: 1rem;
-  padding-bottom: 12rem;
-  background: #f6f3ea;
-  min-height: 100vh;
-  padding: 5rem 5vw 2rem;
+  max-height: 100vh;
+  max-width: 100vw;
+  color: #282828;
+}
+header #header-wrap {
+  border: 5px solid #282828;
+  display: grid;
+  margin: 0px auto;
+  margin-top: 15vh;
+  margin-bottom: 15vh;
+  grid-template-columns: 100px 100px 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px 100px 100px;
+  grid-gap: 1rem;
 }
 header h1:nth-child(1) {
-  font-size: calc(1.3rem + 1.8vw);
-  grid-column: 1/4;
-  text-align: right;
+  font-size: 4.5rem;
+  grid-column: 5;
+  grid-row: span;
+  margin-right: -1rem;
+  justify-self: right;
+  -ms-writing-mode: sideways-rl;
+      writing-mode: sideways-rl;
 }
 header h1:nth-child(2) {
   color: #f9423a;
-  -ms-writing-mode: tb-lr;
-      writing-mode: vertical-lr;
-  grid-column: 3/4;
-  grid-row: 2/5;
-  justify-self: end;
-  margin-top: -10px;
-  margin-right: -10px;
+  grid-row: 1/2;
+  grid-column: auto;
+  margin-top: -0.5rem;
+  justify-self: left;
+  font-size: 3rem;
 }
 header h3 {
-  grid-row: 4/4;
-  grid-column: 4/4;
+  grid-row: 4;
+  grid-column: 1/6;
+  font-size: 6.7rem;
+  text-align: left;
   margin-bottom: 0;
+  font-stretch: ultra-expanded;
+  font-family: "Lobster", cursive;
 }
 header #btn-container {
-  grid-row: 2;
-  grid-column: 2;
+  grid-row: 3;
+  grid-column: 1/3;
   text-align: right;
   display: flex;
   flex-direction: column;
 }
-header #blog-link {
-  grid-row: 5;
-  grid-column: 3/4;
-  justify-self: end;
-}
-
-#header-wrap {
-  width: 66vw;
-  display: grid;
-  grid-template-columns: auto 1fr 1fr auto;
-  grid-template-rows: auto 1fr 1fr auto auto;
-  grid-gap: 1rem;
-  transform: rotate(-45deg);
-}
-
-.outter-container {
-  font-family: sans-serif;
-  display: grid;
-  gap: 2rem;
-  grid-template-columns: repeat(auto-fit minmax(200px, 1fr));
-  grid-template-rows: 1fr 1fr 1fr 1fr auto;
-}
-
-#intro {
+header #btn-container button {
+  padding: 0.5rem;
+  margin: 1px;
   background-color: #FFF;
-  height: 100vh;
+  border: 5px solid rgba(12, 12, 10, 0.8);
+  font-weight: 700;
+  font-size: 2rem;
 }
-#intro div {
-  max-width: 100vw;
-  font-size: 1.5rem;
-  padding-top: 35vh;
-  text-align: center;
-  font-family: "Rubik", sans-serif;
-  line-height: 2.5rem;
-}
-#intro p {
-  font-family: "Ubuntu", sans-serif;
+header #btn-container a {
   text-align: left;
-  font-size: 1.5rem;
-  padding-left: 0.5rem;
-  color: rgb(103, 98, 98);
-}
-#intro h1 {
-  text-align: center;
-  font-style: normal;
-  color: plum;
-  text-shadow: 0.1rem 0.1rem black;
-  text-align: center;
-}
-#intro #go-to-projects {
-  position: absolute;
-  right: 7rem;
-  bottom: 7rem;
-}
-#intro button {
-  background-color: plum;
-  border: 2px solid #422800;
-  border-radius: 30px;
-  box-shadow: #422800 4px 4px 0 0;
-  color: #422800;
-  cursor: pointer;
-  display: inline-block;
-  font-weight: 600;
-  font-size: 18px;
-  padding: 0 18px;
-  line-height: 50px;
-  text-align: center;
+  margin-left: 0.5em;
   text-decoration: none;
-  -moz-user-select: none;
-   -ms-user-select: none;
-       user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
-#intro .button:hover {
-  background-color: #fff;
-}
-#intro .button:active {
-  box-shadow: #422800 2px 2px 0 0;
-  transform: translate(2px, 2px);
+  color: black;
 }
 
 #projects {
-  color: #FFF;
-  background-color: plum;
   height: 100vh;
   padding-top: 15vh;
   padding-bottom: 15vh;
@@ -171,7 +117,7 @@ header #blog-link {
 
 #contact {
   padding: 1rem;
-  color: rgb(103, 98, 98);
+  color: #282828;
 }
 
 @media (min-width: 540px) {
@@ -187,6 +133,10 @@ header #blog-link {
   }
 }
 @media (min-width: 768px) {
+  #header-wrap {
+    margin: auto;
+    transform: rotate(-45deg);
+  }
   .button {
     min-width: 120px;
     padding: 0 25px;
