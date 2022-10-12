@@ -3,6 +3,7 @@
 * {
   box-sizing: border-box;
   font-family: "Rubik", sans-serif;
+  color: #282828;
 }
 
 header {
@@ -21,15 +22,16 @@ header #header-wrap {
   grid-template-columns: 100px 100px 100px 100px 100px;
   grid-template-rows: 100px 100px 100px 100px 100px;
   grid-gap: 1rem;
-  transition: 2s;
+  transition: 1.8s;
 }
 header h1:nth-child(1) {
-  font-size: 4rem;
+  font-size: 3.9em;
   grid-column: 5;
   grid-row: 1/6;
   color: #FFF;
-  background-color: red;
+  background-color: #f9423a;
   margin-right: -1px;
+  margin-bottom: 40px;
   justify-self: right;
   -ms-writing-mode: sideways-rl;
       writing-mode: sideways-rl;
@@ -48,7 +50,7 @@ header h3 {
   grid-column: 1/6;
   font-size: 6.7rem;
   text-align: left;
-  margin-bottom: 0;
+  margin-top: 10rem;
   font-stretch: ultra-expanded;
   font-family: "Lobster", cursive;
 }
@@ -69,32 +71,31 @@ header #btn-container button {
   font-size: 2rem;
 }
 header #btn-container button:hover {
-  background-color: red;
+  background-color: #f9423a;
   transition: 0.7s;
 }
 header #btn-container a {
   text-align: left;
   margin-left: 0.5em;
   text-decoration: none;
-  color: black;
 }
 
 #projects {
+  background-color: yellow;
+  width: 100vw;
   height: 100vh;
-  padding-top: 15vh;
-  padding-bottom: 15vh;
-  display: flex;
-  flex-direction: column;
+  margin: 0 auto;
 }
-#projects h3 {
-  font-size: 2rem;
-  text-shadow: 0.1rem 0.1rem black;
-  text-align: center;
+#projects #container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1rem;
 }
-#projects h4 {
-  color: plum;
-  text-shadow: 0.1rem 0.1rem #282828;
-  text-align: center;
+#projects #container .project-item {
+  padding: 0.5rem;
+}
+#projects img {
+  max-width: 30vw;
 }
 
 #contact {
@@ -106,7 +107,7 @@ header #btn-container a {
   #header-wrap {
     margin: auto;
     transform: rotate(-45deg);
-    transition: 2s;
+    transition: 1.8s;
   }
   .button {
     min-width: 120px;
