@@ -91,6 +91,7 @@ header {
     }
 
 }
+//TODO WHY THE FUCK IS MY CSS NOT COMPILING
 
 #projects {
     height: 100vh;
@@ -110,55 +111,40 @@ header {
         @include fancyText;
     }
 
-    #container {
-        max-width: 100vw;
-        display: flex;
-        overflow-x: scroll;
-        scroll-snap-type: x mandatory;
+    // #container {
+    //     max-width: 100vw;
+    //     display: flex;
+    //     overflow-x: scroll;
+    //     scroll-snap-type: x mandatory;
 
-        .project-item {
-            display: flex;
-            flex-direction: column;
-            background-color: hsla(0, 0%, 100%, 0.702);
-            color: $purple;
-            display: flex;
-            flex-direction: column;
-            max-width: 90vw;
-            padding: 1rem;
-            box-shadow: rgb(0, 0, 0) 0.5rem 0.5rem;
-            margin-bottom: 1rem;
-            margin-right: 1em;
+    //     .project-item {
+    //         display: flex;
+    //         flex-direction: column;
+    //         background-color: hsla(0, 0%, 100%, 0.702);
+    //         color: $purple;
+    //         display: flex;
+    //         flex-direction: column;
+    //         max-width: 90vw;
+    //         padding: 1rem;
+    //         box-shadow: rgb(0, 0, 0) 0.5rem 0.5rem;
+    //         margin-bottom: 1rem;
+    //         margin-right: 1em;
 
-            p {
-                line-height: 1.2rem;
-                margin-bottom: 1px;
-            }
+    //         p {
+    //             line-height: 1.2rem;
+    //             margin-bottom: 1px;
+    //         }
 
-            img {
-                max-height: 13rem;
-            }
-        }
-    }
+    //         img {
+    //             max-height: 13rem;
+    //         }
+    //     }
+    // }
 }
 
 #contact {
     padding: 1rem;
     color: $grey-text;
-}
-
-@media (min-width: 540px) {
-    .container {
-        box-sizing: border-box;
-        margin: 0 auto;
-    }
-
-    #intro {
-        padding: 1rem;
-
-        p {
-            text-align: center;
-        }
-    }
 }
 
 @media (min-width: 768px) {
@@ -174,3 +160,4 @@ header {
 }
 
 //TODO add a nav bar that uses icons like linkedin
+//TODO add a kistch toggke that makes it go from proffessional to bubblegum aesthetics 
