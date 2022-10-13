@@ -2,6 +2,7 @@
 
 ## To-Do
 
+- fix that janky color bar AGAIN
 - Get better at CSS grids, using grid-area more to define my grid
 - use viewport and view width more often for responsive design with less media queries needed
 
