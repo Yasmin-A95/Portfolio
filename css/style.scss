@@ -150,7 +150,24 @@ header {
 
     address {
         grid-area: contact;
+
+        h4 {
+            font-style: normal;
+            text-align: center;
+            padding-left: 2rem;
+        }
+
+        ul {
+            list-style: symbols(cyclic "‡");
+            line-height: 1.5em;
+
+            a:hover {
+                color: $red;
+            }
+        }
+
     }
+
 
     #talks {
 
@@ -174,7 +191,6 @@ header {
             text-align: left;
             padding: 2px 0;
             align-self: end;
-
 
             p,
             a {

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 * {
@@ -122,6 +123,18 @@ header #btn-container a {
 }
 #contact address {
   grid-area: contact;
+}
+#contact address h4 {
+  font-style: normal;
+  text-align: center;
+  padding-left: 2rem;
+}
+#contact address ul {
+  list-style: symbols(cyclic "‡");
+  line-height: 1.5em;
+}
+#contact address ul a:hover {
+  color: #f9423a;
 }
 #contact #talks li:last-child {
   border-bottom: 5px solid rgba(12, 12, 10, 0.8);
