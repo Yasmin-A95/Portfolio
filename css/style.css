@@ -38,7 +38,7 @@ header h1:nth-child(1) {
   color: #fbf9f6;
   background-color: #f9423a;
   margin-right: -1px;
-  margin-bottom: 40px;
+  margin-bottom: 1rem;
   justify-self: right;
   -ms-writing-mode: tb-lr;
       writing-mode: vertical-lr;
