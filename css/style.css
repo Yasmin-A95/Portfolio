@@ -9,6 +9,7 @@
 body {
   display: flex;
   flex-direction: column;
+  background-color: #fbf9f6;
 }
 
 header {
@@ -96,7 +97,6 @@ header #btn-container a {
   flex-direction: column;
 }
 #projects-container #projects .project-item {
-  background-color: #fbf9f6;
   margin-top: 3px;
   display: grid;
   grid-template-columns: 1fr 1fr;

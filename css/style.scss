@@ -19,6 +19,7 @@ $offwhite: #fbf9f6;
 body {
     display: flex;
     flex-direction: column;
+    background-color: $offwhite;
 }
 
 header {
@@ -117,7 +118,6 @@ header {
         flex-direction: column;
 
         .project-item {
-            background-color: $offwhite;
             margin-top: 3px;
             display: grid;
             grid-template-columns: 1fr 1fr;
