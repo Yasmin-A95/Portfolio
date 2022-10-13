@@ -8,6 +8,7 @@
 
 ## Fun To Do
 - easter eggs
+- a light dark mode toggle except it's for business vs kitsch
 - conway's game of life in css or script involved somewhere sneaky
 
 ## Wish List, Future Me I Hope You Have Time For These
