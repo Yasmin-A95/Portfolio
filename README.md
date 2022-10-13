@@ -1,5 +1,7 @@
 # My Portfolio Site
 
+[Click Here](https://yasmin-a95.github.io/Portfolio/)
+
 ## To-Do
 
 - fix that janky color bar AGAIN
