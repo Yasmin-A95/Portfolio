@@ -34,7 +34,7 @@ header h1:nth-child(1) {
   font-size: 3.9em;
   grid-column: 5;
   grid-row: 1/6;
-  color: #fff;
+  color: #fbf9f6;
   background-color: #f9423a;
   margin-right: -1px;
   margin-bottom: 40px;
@@ -71,7 +71,7 @@ header #btn-container {
 header #btn-container button {
   padding: 0.5rem;
   margin: 1px;
-  background-color: #fff;
+  background-color: #fbf9f6;
   border: 5px solid rgba(12, 12, 10, 0.8);
   font-weight: 700;
   font-size: 2rem;
@@ -116,6 +116,37 @@ header #btn-container a {
   display: grid;
   padding: 1rem;
   color: #282828;
+}
+#contact #talks {
+  text-transform: uppercase;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "talks whitespace";
+  margin-left: -1rem;
+  padding-left: 0;
+}
+#contact #talks li:last-child {
+  border-bottom: 5px solid rgba(12, 12, 10, 0.8);
+}
+#contact #talks ol {
+  font-weight: 700;
+}
+#contact #talks li {
+  margin-right: 2rem;
+  list-style: none;
+  padding: 1rem;
+  grid-area: talks;
+  border-top: 5px solid rgba(12, 12, 10, 0.8);
+  border-left: 5px solid rgba(12, 12, 10, 0.8);
+  border-right: 5px solid rgba(12, 12, 10, 0.8);
+  font-size: 95%;
+  text-align: left;
+  padding: 2px 0;
+  align-self: end;
+}
+#contact #talks li p,
+#contact #talks li a {
+  display: inline-block;
 }
 
 @media (min-width: 768px) {

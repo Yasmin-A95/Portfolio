@@ -45,7 +45,7 @@ header {
         font-size: 3.9em;
         grid-column: 5;
         grid-row: 1/6;
-        color: $white;
+        color: $offwhite;
         background-color: $red;
         margin-right: -1px;
         margin-bottom: 40px;
@@ -87,7 +87,7 @@ header {
         button {
             padding: 0.5rem;
             margin: 1px;
-            background-color: $white;
+            background-color: $offwhite;
             border: 5px solid rgba(12, 12, 10, 0.8);
             font-weight: 700;
             font-size: 2rem;
@@ -144,6 +144,47 @@ header {
     display: grid;
     padding: 1rem;
     color: $grey;
+
+
+    #talks {
+        text-transform: uppercase;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "talks whitespace";
+        margin-left: -1rem;
+        padding-left: 0;
+
+        ol {}
+
+        li:last-child {
+            border-bottom: 5px solid rgba(12, 12, 10, 0.8);
+        }
+
+        ol {
+            font-weight: 700;
+        }
+
+        li {
+            margin-right: 2rem;
+            list-style: none;
+            padding: 1rem;
+            grid-area: talks;
+            border-top: 5px solid rgba(12, 12, 10, 0.8);
+            border-left: 5px solid rgba(12, 12, 10, 0.8);
+            border-right: 5px solid rgba(12, 12, 10, 0.8);
+            font-size: 95%;
+            text-align: left;
+            padding: 2px 0;
+            align-self: end;
+
+
+            p,
+            a {
+                display: inline-block;
+            }
+        }
+
+    }
 }
 
 @media (min-width: 768px) {
