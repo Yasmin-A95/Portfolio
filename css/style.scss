@@ -50,8 +50,7 @@ header {
         margin-right: -1px;
         margin-bottom: 40px;
         justify-self: right;
-        writing-mode: sideways-rl;
-
+        writing-mode: vertical-lr
     }
 
     h1:nth-child(2) {
@@ -148,8 +147,10 @@ header {
     margin-left: -1rem;
     padding-left: 0;
 
+
     address {
         grid-area: contact;
+
 
         h4 {
             font-style: normal;
@@ -161,11 +162,11 @@ header {
             list-style: symbols(cyclic "‡");
             line-height: 1.5em;
 
-            a:hover {
-                color: $red;
-            }
         }
 
+        a:hover {
+            color: $red;
+        }
     }
 
 
@@ -178,6 +179,8 @@ header {
         ol {
             font-weight: 700;
         }
+
+
 
         li {
             margin-right: 2rem;
@@ -192,11 +195,17 @@ header {
             padding: 2px 0;
             align-self: end;
 
+
             p,
             a {
                 display: inline-block;
             }
         }
+
+        li:hover {
+            background-color: $red;
+        }
+
     }
 }
 

@@ -40,8 +40,8 @@ header h1:nth-child(1) {
   margin-right: -1px;
   margin-bottom: 40px;
   justify-self: right;
-  -ms-writing-mode: sideways-rl;
-      writing-mode: sideways-rl;
+  -ms-writing-mode: tb-lr;
+      writing-mode: vertical-lr;
 }
 header h1:nth-child(2) {
   grid-row: 1/5;
@@ -133,7 +133,7 @@ header #btn-container a {
   list-style: symbols(cyclic "‡");
   line-height: 1.5em;
 }
-#contact address ul a:hover {
+#contact address a:hover {
   color: #f9423a;
 }
 #contact #talks li:last-child {
@@ -158,6 +158,9 @@ header #btn-container a {
 #contact #talks li p,
 #contact #talks li a {
   display: inline-block;
+}
+#contact #talks li:hover {
+  background-color: #f9423a;
 }
 
 @media (min-width: 768px) {
