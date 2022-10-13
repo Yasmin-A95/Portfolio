@@ -135,6 +135,7 @@ header #btn-container a {
 }
 #contact address a:hover {
   color: #f9423a;
+  transition: 0.1s;
 }
 #contact #talks li:last-child {
   border-bottom: 5px solid rgba(12, 12, 10, 0.8);
@@ -161,6 +162,7 @@ header #btn-container a {
 }
 #contact #talks li:hover {
   background-color: #f9423a;
+  transition: 1.3s;
 }
 
 @media (min-width: 768px) {
