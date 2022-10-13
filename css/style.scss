@@ -141,20 +141,18 @@ header {
 }
 
 #contact {
+    text-transform: uppercase;
     display: grid;
-    padding: 1rem;
-    color: $grey;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "contact talks";
+    margin-left: -1rem;
+    padding-left: 0;
 
+    address {
+        grid-area: contact;
+    }
 
     #talks {
-        text-transform: uppercase;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: "talks whitespace";
-        margin-left: -1rem;
-        padding-left: 0;
-
-        ol {}
 
         li:last-child {
             border-bottom: 5px solid rgba(12, 12, 10, 0.8);
@@ -183,9 +181,9 @@ header {
                 display: inline-block;
             }
         }
-
     }
 }
+
 
 @media (min-width: 768px) {
     #header-wrap {

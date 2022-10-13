@@ -113,17 +113,15 @@ header #btn-container a {
 }
 
 #contact {
-  display: grid;
-  padding: 1rem;
-  color: #282828;
-}
-#contact #talks {
   text-transform: uppercase;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas: "talks whitespace";
+  grid-template-areas: "contact talks";
   margin-left: -1rem;
   padding-left: 0;
+}
+#contact address {
+  grid-area: contact;
 }
 #contact #talks li:last-child {
   border-bottom: 5px solid rgba(12, 12, 10, 0.8);
