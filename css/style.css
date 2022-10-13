@@ -85,37 +85,31 @@ header #btn-container a {
   text-decoration: none;
 }
 
-#projects {
-  background-color: yellow;
+#projects-container {
+  max-width: 490px;
   margin: 0 auto;
+  text-align: center;
+  margin-top: 3rem;
 }
-#projects #container {
+#projects-container #projects {
   display: flex;
+  flex-direction: column;
 }
-#projects .project-item {
+#projects-container #projects .project-item {
+  background-color: #fbf9f6;
+  margin-top: 3px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
-  grid-template-areas: "title" "image" "text";
+  grid-template-rows: 0.2fr 1fr;
+  grid-template-areas: "image heading" "image text" "image text";
 }
-#projects .project-item h4 {
-  grid-row: 1;
-  grid-column: 2;
-  margin-bottom: 1rem;
-}
-#projects .project-item img {
+#projects-container #projects #image {
   grid-area: image;
-  grid-row: 1;
 }
-#projects .project-item .text {
-  grid-row: 1/2;
-  grid-column: 2;
-  margin-top: 3rem;
-  text-align: left;
-  margin-left: 0.5rem;
-}
-#projects img {
-  max-height: 13rem;
+#projects-container #projects #image a > img {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 #contact {
@@ -136,5 +130,40 @@ header #btn-container a {
   .button {
     min-width: 120px;
     padding: 0 25px;
+  }
+}
+@media (min-width: 600px) {
+  #projects-container {
+    max-width: 600px;
+  }
+}
+@media (min-width: 760px) {
+  #projects-container {
+    max-width: 650px;
+  }
+}
+@media (min-width: 860px) {
+  #projects-container {
+    max-width: 750px;
+  }
+}
+@media (min-width: 930px) {
+  #projects-container {
+    max-width: 850px;
+  }
+}
+@media (min-width: 1000px) {
+  #projects-container {
+    max-width: 980px;
+  }
+}
+@media (min-width: 1200px) {
+  #projects-container {
+    max-width: 1050px;
+  }
+}
+@media (min-width: 1400px) {
+  #projects-container {
+    max-width: 1050px;
   }
 }/*# sourceMappingURL=style.css.map */

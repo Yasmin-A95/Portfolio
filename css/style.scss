@@ -3,6 +3,7 @@
 $grey: #282828;
 $red: #f9423a;
 $white: #fff;
+$offwhite: #fbf9f6;
 
 
 @mixin curlyText {
@@ -105,58 +106,38 @@ header {
 
 }
 
-#projects {
-    background-color: yellow;
+#projects-container {
+    max-width: 490px;
     margin: 0 auto;
+    text-align: center;
+    margin-top: 3rem;
 
-    #container {
-       display: flex;
-    }
+    #projects {
+        display: flex;
+        flex-direction: column;
 
-    .project-item {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto;
-        grid-template-areas:
-            "title"
-            "image"
-            "text";
-
-        h4 {
-            grid-row: 1;
-            grid-column: 2;
-            margin-bottom: 1rem;
+        .project-item {
+            background-color: $offwhite;
+            margin-top: 3px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 0.2fr 1fr;
+            grid-template-areas:
+                "image heading"
+                "image text"
+                "image text";
         }
 
-        img {
+
+        #image {
             grid-area: image;
-            grid-row: 1;
+
+            a>img {
+                max-width: 100%;
+                object-fit: cover;
+            }
         }
-
-        .text {
-            grid-row: 1/2;
-            grid-column: 2;
-            margin-top: 3rem;
-            text-align: left;
-            margin-left: 0.5rem;
-        }
-
-        // .project-item {
-        //     margin: 0 auto;
-        //     text-align: center;
-        //     display: flex;
-        //     flex-direction: column;
     }
-
-    // .text {
-    //     text-align: center;
-    //     max-width: 13rem;
-    // }
-
-    img {
-        max-height: 13rem;
-    }
-
 }
 
 #contact {
@@ -172,6 +153,7 @@ header {
         transition: 1.8s;
     }
 
+
     #projects {
         margin: 2rem;
     }
@@ -179,6 +161,56 @@ header {
     .button {
         min-width: 120px;
         padding: 0 25px;
+    }
+}
+
+@media (min-width: 600px) {
+
+    #projects-container {
+        max-width: 600px;
+    }
+}
+
+@media (min-width: 760px) {
+
+    #projects-container {
+        max-width: 650px;
+    }
+}
+
+@media (min-width: 860px) {
+
+    #projects-container {
+        max-width: 750px;
+    }
+}
+
+@media (min-width: 930px) {
+
+    #projects-container {
+        max-width: 850px;
+    }
+}
+
+@media (min-width: 1000px) {
+
+    #projects-container {
+        max-width: 980px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    #projects-container {
+        max-width: 1050px;
+    }
+
+}
+
+@media (min-width: 1400px) {
+
+    #projects-container {
+        max-width: 1050px;
     }
 }
 
