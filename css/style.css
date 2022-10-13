@@ -31,6 +31,31 @@ header #header-wrap {
   grid-gap: 1rem;
   transition: 1.8s;
 }
+header canvas {
+  grid-column: 1/6;
+  grid-row: 1/5;
+  width: 490px;
+  height: 524px;
+  -webkit-animation: fadeAnimation 3s;
+}
+header .hidden {
+  display: none;
+  -webkit-animation: fadeAnimation 3s;
+}
+@-webkit-keyframes fadeAnimation {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 header h1:nth-child(1) {
   font-size: 3.9em;
   grid-column: 5;

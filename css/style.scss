@@ -41,6 +41,38 @@ header {
         transition: 1.8s;
     }
 
+    canvas {
+        grid-column: 1/6;
+        grid-row: 1/5;
+        width: 490px;
+        height: 524px;
+        -webkit-animation: fadeAnimation 3s;
+    }
+
+    .hidden {
+        display: none;
+        -webkit-animation: fadeAnimation 3s;
+    }
+
+    @-webkit-keyframes fadeAnimation {
+        0% {
+            opacity: 0;
+        }
+
+        25% {
+            opacity: 0.25;
+        }
+
+        50% {
+            opacity: 0.5;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+
     h1:nth-child(1) {
         font-size: 3.9em;
         grid-column: 5;
