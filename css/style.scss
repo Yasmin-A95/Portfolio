@@ -27,33 +27,38 @@ header {
     max-width: 100vw;
     color: $grey;
 
-    #header-wrap {
+    #wrap {
         border: 5px solid $grey;
-        display: grid;
+        // margin-top: 15vh;
+        // margin-bottom: 15vh;
         margin: 0px auto;
-        margin-top: 15vh;
-        margin-bottom: 15vh;
-        grid-template-columns: 100px 100px 100px 100px 100px;
-        grid-template-rows: 100px 100px 100px 100px 100px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "job job name"
+            "list list name"
+            "nerd nerd name";
         grid-gap: 1rem;
         transition: 1.8s;
     }
 
     h1:nth-child(1) {
-        font-size: 3.9em;
-        grid-column: 5;
-        grid-row: 1/6;
+        grid-area: name;
+        // font-size: 3.9em;
+        // grid-column: 5;
+        // grid-row: 1/5;
         color: $offwhite;
         background-color: $red;
-        margin-right: -1px;
-        margin-bottom: 1rem;
-        justify-self: right;
+        // margin-right: -1px;
+        // margin-bottom: 138px;
+        // justify-self: right;
         writing-mode: vertical-lr
     }
 
     h1:nth-child(2) {
-        grid-row: 1/5;
-        grid-column: 1/5;
+        grid-area: job;
+        // grid-row: 1/5;
+        // grid-column: 1/5;
         font-size: 2.5rem;
         margin-left: -1px;
         color: $red;
@@ -63,23 +68,25 @@ header {
     }
 
     h3 {
-        grid-row: 4;
-        grid-column: 1/6;
+        grid-area: nerd;
+        // grid-row: -1;
+        // grid-column: 1/4;
         font-size: 6.7rem;
-        text-align: right;
-        margin-top: 10rem;
+        // text-align: right;
+        // margin-bottom: -20px;
         font-stretch: ultra-expanded;
         @include curlyText;
 
     }
 
     #btn-container {
+        grid-area: list;
         text-align: right;
         display: flex;
         flex-direction: column;
-        grid-column: 2/5;
-        transform: rotate(35deg);
-        grid-row: 2/3;
+        // grid-column: 2/5;
+        // // transform: rotate(35deg);
+        // grid-row: 2/3;
 
         button {
             padding: 0.5rem;
@@ -211,9 +218,13 @@ header {
 
 
 @media (min-width: 768px) {
+    #boarder-wrap {
+
+        transform: rotate(-45deg)
+    }
+
     #header-wrap {
         margin: auto;
-        transform: rotate(-45deg);
         transition: 1.8s;
     }
 
