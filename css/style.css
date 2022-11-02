@@ -19,7 +19,8 @@ header {
   color: #282828;
 }
 header #wrap {
-  border: 5px solid #282828;
+  margin-top: 15vh;
+  margin-bottom: 15vh;
   margin: 0px auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
