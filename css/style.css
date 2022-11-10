@@ -49,6 +49,9 @@ header {
   margin-bottom: 1em;
   padding: 1em;
 }
+#projects ul li #tech-stack {
+  font-size: max(90%, 10px);
+}
 #projects ul li h5 {
   text-align: center;
 }
