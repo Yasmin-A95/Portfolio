@@ -1,208 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- 
-              _____                    _____          
-             /\    \                  /\    \         
-            /::\____\                /::\    \        
-           /:::/    /                \:::\    \       
-          /:::/    /                  \:::\    \      
-         /:::/    /                    \:::\    \     
-        /:::/____/                      \:::\    \    
-       /::::\    \                      /::::\    \   
-      /::::::\    \   _____    ____    /::::::\    \  
-     /:::/\:::\    \ /\    \  /\   \  /:::/\:::\    \ 
-    /:::/  \:::\    /::\____\/::\   \/:::/  \:::\____\
-    \::/    \:::\  /:::/    /\:::\  /:::/    \::/    /
-     \/____/ \:::\/:::/    /  \:::\/:::/    / \/____/ 
-              \::::::/    /    \::::::/    /          
-               \::::/    /      \::::/____/           
-               /:::/    /        \:::\    \           
-              /:::/    /          \:::\    \          
-             /:::/    /            \:::\    \         
-            /:::/    /              \:::\____\        
-            \::/    /                \::/    /        
-             \/____/                  \/____/                                                 
-    -->
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalise.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Yasmin Archibald Jr Software Dev</title>
 </head>
 
-
-
 <body>
-    <header>
-        <div id="wrap">
-            <h1>Yasmin Archibald</h1>
-            <h1>Jr Software Developer</h1>
-            <h3>Huge Nerd</h3>
-            <div id="btn-container">
-                <button><a href="#projects">Portfolio</a></button>
-                <button><a href="#contact">Contact</a></button>
-                <button> <a href="#talks">Talks</a> </button>
-            </div>
-    </header>
-    <div id="projects-container">
-        <section id="projects">
-            <h3>Projects</h3>
-            <div id="container">
-                <div class="project-item">
-                    <h4 id="heading">Only Shadows</h4>
-                    <div id="image">
-                        <a href="https://github.com/Yasmin-A95/Only_Shadows" target="_blank" rel="noopener noreferrer">
-                            <img src="assets/onlyshadows.png"
-                                alt="a distorted image of my loungeroom, there's a big rug, a few plants, coffee table and a couch visible"
-                                title="click to see the repo">
-                        </a>
-                    </div>
-                    <div class="text">
-                        <p>My final project at G.A and passion project forever. A THREE.js point-and-click adventure
-                            game
-                            based
-                            on a
-                            short story written by a friend, made using real photos I took and manipulated with an
-                            algorithm.
-                        </p>
-                    </div>
-                </div>
-                <div class="project-item">
-                    <h4 id="heading">Artsy.io</h4>
-                    <div id="image">
-                        <a href="https://github.com/Yasmin-A95/CollabCanvas" target="_blank" rel="noopener noreferrer">
-                            <img src="assets/artsyio.png"
-                                alt="a bit art image of a brain on fire over a hot pink background"
-                                title="click to see the repo">
-                        </a>
-                    </div>
-                    <div class="text">
-                        <p>A collaborative drawing web app made using WebSockets so you can draw live with friends and
-                            strangers.</p>
-                    </div>
-                </div>
-                <div class="project-item">
-                    <h4 id="heading">Dead Words</h4>
-                    <div id="image">
-                        <a href="https://github.com/Yasmin-A95/Dead_Words" target="_blank" rel="noopener noreferrer">
-                            <img src="assets/deadwords.png" alt="a screenshot of the Dead Words site"
-                                title="click to see the repo">
-                        </a>
-                    </div>
-                    <div class="text">
-                        <p>A collaborative story-telling app, and also the first project I got to write from start to
-                            finish
-                            and
-                            come up with the concept for.</p>
-                    </div>
-                </div>
-                <div class="project-item">
-                    <h4 id="heading">Tic Tac Toe</h4>
-                    <div id="image">
-                        <a href="https://github.com/Yasmin-A95/tictactoe" target="_blank" rel="noopener noreferrer">
-                            <img src="assets/tictactoe.png" alt="a screenshot of the tic tac toe website"
-                                title="click to see the repo">
-                        </a>
-                    </div>
-                    <div class="text">
-                        <p>My first project at G.A. Tic-Tac-Toe. I opted to skip the css extras and went for an
-                            unbeatable
-                            ai
-                            opponent using the mimiax algorithm. I tried and failed to implement it - but I had so much
-                            fun
-                            attempting it. This was the first taste I got for seeing code as a creative and beautiful
-                            thing.
-                        </p>
-                    </div>
-                </div>
-                <div class="project-item">
-                    <h4 id="heading">Mini Projects</h4>
-                    <div id="image">
-                        <a href="https://github.com/Yasmin-A95/Image_Manipulation_Algorithmic" target="_blank"
-                            rel="noopener noreferrer">
-                            <img src="assets/img-manip.png"
-                                alt="a distorted image of a brick house, it's dark and the light is glowing in the window"
-                                title="click to see the repo">
-                        </a>
-                    </div>
-                    <div class="text">
-                        <p>This is an image manipulation algorithm I used to distort the images for Only Shadows. I
-                            needed
-                            to
-                            do it on the backend using node because my browser kept crashing.
-                        </p>
-                    </div>
-                </div>
-            </div>
+    <div id="container">
+        <header>
+            <h1>
+                Yasmin Archibald, Jr Software Developer & <em>Huge Nerd</em>
+            </h1>
+        </header>
+        <section id="intro">
+            <p>
+                I'm a Junior Software Developer keen to hit the ground running and kick-off my career with a bang! I
+                thrive
+                in the intersections of technology, creativity, and community.
+            </p>
+            <p>
+                I love participating in community
+                events either by speaking at them, helping organise them, or just enjoying the talks and free pizza.
+            </p>
+            <p>
+                When I'm not writing code or hanging out with fellow nerds I'm usuaully tinkering with something artsy
+                like
+                teaching myself how to sew, play guitar, or ceramics.
+            </p>
+
+            <h2>Below you'll find my headshot, a list of my <a href="#talks">talks</a>, and <a
+                    href="#projects">projects</a>
+                I've worked on</h2>
+            <img src="assets/yasmin_proffesh.jpg" alt="">
         </section>
-    </div>
-    <section id="contact">
-        <address>
-            <h4>Get in touch</h4>
+        <section id="talks">
+            <h4>The Talks</h4>
             <ul>
                 <li>
-                    <a href="https://www.linkedin.com/in/yasmin-archibald/" target="_blank"
-                        rel="noopener noreferrer">Linkedin</a>
+                    <p>Watch the recording here:</p>
+                    <a target="_blank" rel="noopener noreferrer"
+                        href="https://www.youtube.com/watch?v=K6RJzkKTqNg&t=15">"Was this a terrible terrible
+                        mistake?"</a>
                 </li>
                 <li>
-                    <a href="https://drive.google.com/file/d/1Vddm9tIplGhzaKQqofLq3rjuXPiIOX9i/view?usp=sharing"
-                        target="_blank" rel="noopener noreferrer">Resume</a>
+                    <a href="https://www.meetup.com/canberra-web-accessibility-inclusive-design/events/288570690/"
+                        target="_blank" rel="noopener noreferrer">
+                        1. Sep 29 Accessibility and Inclusive Design
+                    </a>
                 </li>
                 <li>
-                    <a href="https://yasmina95.hashnode.dev/" target="_blank" rel="noopener noreferrer">Blog</a>
+                    <a href="https://webdirections.org/wdyk/index.php" target="_blank" rel="noopener noreferrer">
+                        2. Oct 6 Web Directions WDYK(now)
+                    </a>
                 </li>
                 <li>
-                    <a href="https://github.com/Yasmin-A95" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href="https://www.meetup.com/ruby-on-rails-oceania-sydney/events/288431489/" target="_blank"
+                        rel="noopener noreferrer">
+                        3. Oct 11 RoRoSyd
+                    </a>
                 </li>
                 <li>
-                    <a href="https://twitter.com/Yasmin_Arch" target="_blank" rel="noopener noreferrer">Twitter</a>
+                    <a href="https://www.meetup.com/ruby-on-rails-oceania-sydney/" target="_blank"
+                        rel="noopener noreferrer">
+                        4. Oct 16 Elixir
+                    </a>
                 </li>
                 <li>
-                    <a href="mailto:yasminarchibald@gmail.com" target="_blank"
-                        rel="noopener noreferrer">yasminarchibald@gmail.com</a>
+                    <p>Oct 27</p>
+                    <a href="https://www.meetup.com/gdgsydney/events/289039458/" target="_blank"
+                        rel="noopener noreferrer">GDG Sydney</a>
                 </li>
             </ul>
-        </address>
-        <ol id="talks">
-            <li>
-                <h4>Talks</h4>
-            </li>
-            <li>
-                <p>Watch the recording here:</p>
-                <a target="_blank" rel="noopener noreferrer"
-                    href="https://www.youtube.com/watch?v=K6RJzkKTqNg&t=15">"Was this a terrible terrible mistake?"</a>
-            </li>
-            <li>
-                <p>Sep 29</p>
-                <a href="https://www.meetup.com/canberra-web-accessibility-inclusive-design/events/288570690/"
-                    target="_blank" rel="noopener noreferrer">Accessibility
-                    and Inclusive Design</a>
-            </li>
-            <li>
-                <p>Oct 6</p>
-                <a href="https://webdirections.org/wdyk/index.php" target="_blank" rel="noopener noreferrer">Web
-                    Directions
-                    WDYK(now)</a>
-            </li>
-            <li>
-                <p>Oct 11</p>
-                <a href="https://www.meetup.com/ruby-on-rails-oceania-sydney/events/288431489/" target="_blank"
-                    rel="noopener noreferrer">RoRoSyd</a>
-            </li>
-            <li>
-                <p>Oct 16</p>
-                <a href="https://www.meetup.com/ruby-on-rails-oceania-sydney/" target="_blank"
-                    rel="noopener noreferrer">Elixir</a>
-            </li>
-            <li>
-                <p>Oct 27</p>
-                <a href="https://www.meetup.com/gdgsydney/events/289039458/" target="_blank"
-                    rel="noopener noreferrer">GDG Sydney</a>
-            </li>
-        </ol>
+        </section>
+    </div>
+    <section id="projects">
+        <section id="general-assembly-projects">
+            <h2>Projects</h1>
+                <ul>
+                    <li>
+                        <h5>CSS Lab 1. STATE</h5>
+                        <div>
+                            <img src="assets/neon-sign.png" alt="">
+                            <img src="assets/neoncss.png" alt="">
+                        </div>
+                        <p>
+                            Walking to the station from the state library I saw a couple of neon signs and thought it
+                            might
+                            be a fun experiment to try to recreate them using CSS.
+                        </p>
+                        <a href="https://codepen.io/Yasmin95/pen/KKeMXVp">Codepen</a>
+                        <p>HTML, CSS.</p>
+                    </li>
+                    <b></b>
+                    <b></b>
+                    <li>
+                        <h5>Only Shadows</h5>
+                        <img src="assets/onlyshadows.png" alt="distorted image of a house">
+                        <p>
+                            My final project. and the hardest thing I've ever done. I took the advice of my instructor
+                            at
+                            G.A
+                            and took on a passion project with a huge scope knowing it will never be quite finished.
+                        </p>
+                        <p>
+                            Combining my history as a photographer, interest in generative art and storytelling, Only
+                            Shadows
+                            is a point and click adventure game based on a short story a friend of mine wrote. It's made
+                            using bubble images mapped onto the inside of three.js spheres.
+                        </p>
+                        <a href="https://github.com/Yasmin-A95/Only_Shadows">GitHub</a>
+                        <a href="https://immersive-bubble.vercel.app/">Play it</a>
+                        <p>
+                            Three.js, JavaScript, HTML, CSS, Webpack.
+                        </p>
+                    </li>
+                    <b></b>
+                    <b></b>
+                    <li>
+                        <h5>Image Manipulation Algorithm</h5>
+                        <img src="assets/img-manip.png" alt="">
+                        <p>
+                            This is an image manipulation algorithm I used to distort the images for Only Shadows. I
+                            needed
+                            to
+                            do it on the backend using node because my browser kept crashing because the images were so
+                            huge.
+                        </p>
+                        <a href="https://github.com/Yasmin-A95/Image_Manipulation_Algorithmic">GitHub</a>
+                        <p>
+                            Node, Canvas.
+                        </p>
+                    </li>
+                    <b></b>
+                    <b></b>
+                    <li>
+                        <h5>Artsy.io</h5>
+                        <img src="assets/artsyio.png" alt="screenshot of artsyio webpage">
+                        <p>
+                            A group project made using websockets. Made in collaborative chaos, for collaborative chaos.
+                        </p>
+                        <p>
+                            I had the idea to make a collaborative art app weeks earlier, but was instructed that I
+                            might
+                            want
+                            to hold off on the idea until the later weeks in the course. When the time came around for
+                            our
+                            class to group up and build something as a team, I was lucky enough to have two people
+                            interested in maing this with me.
+                        </p>
+                        <a href="https://github.com/Yasmin-A95/Artsy.io">GitHub</a>
+                        <a href="https://github.com/Yasmin-A95/Artsy.io">App</a>
+                        <p>
+                            Websockets, Node.js, MongoDB, Express, Canvas.
+                        </p>
+                    </li>
+                    <b></b>
+                    <b></b>
+                    <li>
+                        <h5>Bean Dripper</h5>
+                        <img src="assets/coffeeivdrip.png" alt="bean dripper web page">
+                        <p>
+                            A 28-hour sprint collaboration with the Software Engineers and the UX designers at General
+                            Assembly. An app made for mobile keeping both the user's needs and the business in mind.
+                        </p>
+                        <a href="https://github.com/eliasskhouryy/coffee_iv_drip">GitHub</a>
+                        <a href="https://coffeedrip-65d9f.web.app/">App</a>
+                        <a href="https://www.figma.com/file/xt1NJqx2K0nv56DN26cRZT/Collabrathon?node-id=1%3A2">Figma</a>
+                        <p>
+                            SCSS, Vue, Firebase, and made from a Figma design breif.
+                        </p>
+                    </li>
+                    <b></b>
+                    <b></b>
+                    <li>
+                        <h5>Dead Words</h5>
+                        <img src="assets/deadwords.png" alt="deadwords web page">
+                        <p>
+                            A collaborative story-telling app, and also the first project I got to write from start to
+                            finish
+                            and come up with the concept for.
+                        </p>
+                        <p>
+                            It was during the making of this app that I learned how important it is to get normal people
+                            to
+                            test your website during development (as opposed to other developers). I had knocked out the
+                            MVP
+                            early in project week, and used nGrok to have my friends make a story together.
+                        </p>
+                        <p>
+                            It was heartwarming to have the people I love use something I made together, and I got
+                            important
+                            feedback that I used to direct the next features I would work on.
+                        </p>
+                        <a href="https://github.com/Yasmin-A95/Dead_Words">GitHub</a>
+                        <a href="https://deadwords1.herokuapp.com/">App</a>
+                        <p>
+                            Ruby on Rails, HTML, CSS.
+                        </p>
+                    </li>
+                    <li>
+                        <h5>Tic Tac Toe</h5>
+                        <img src="assets/tictactoe.png" alt="tic tac toe webpage">
+                        <p>
+                            My first project at G.A. Tic-Tac-Toe. I opted to skip a lot of the visual stuff this time
+                            around
+                            and go straight for attempting an unbeatable A.I opponent. I failed at implementing the
+                            minimax
+                            algorithm, but it was also the first taste I got of really loving programming and seeing it
+                            as
+                            an art rather than just a means to an end.
+                        </p>
+                        <a href="https://github.com/Yasmin-A95/tictactoe">GitHub</a>
+                        <a href="https://yasmin-a95.github.io/tictactoe/">App</a>
+                        <p>
+                            HTML, CSS, JavaScript.
+                        </p>
+                    </li>
+                </ul>
+        </section>
     </section>
+    <footer>
+        <hr />
+        Making the internet weirder 2022
+    </footer>
 </body>
 
 </html>
