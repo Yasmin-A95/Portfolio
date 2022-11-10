@@ -24,12 +24,25 @@ header {
 #intro {
     img {
         width: 100%;
-        // height: 100%;
-        // object-fit: cover;
-        // object-position: 58% 50%;
         box-shadow: -8px 8px 0 0 black;
         border: 1px solid black;
         max-width: 100%;
+    }
+
+
+}
+
+#talks {
+    ul {
+        list-style: none;
+
+        li:nth-child(1) {
+            padding: 1em, 0;
+        }
+
+        p {
+            display: inline-block;
+        }
     }
 }
 

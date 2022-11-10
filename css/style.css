@@ -24,6 +24,16 @@ header {
   max-width: 100%;
 }
 
+#talks ul {
+  list-style: none;
+}
+#talks ul li:nth-child(1) {
+  padding: 1em, 0;
+}
+#talks ul p {
+  display: inline-block;
+}
+
 #projects {
   margin: 0 auto;
 }
