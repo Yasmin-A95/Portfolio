@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&display=swap');
 
 $offwhhite: rgb(255, 242, 242);
+$purple: rgb(200, 0, 255);
 
 * {
     box-sizing: border-box;
@@ -8,13 +9,12 @@ $offwhhite: rgb(255, 242, 242);
     font-kerning: normal;
     font-size: 100%;
     font-family: 'Merriweather', serif;
-
 }
 
 body {
     max-width: 95vw;
     margin: 0 auto;
-    background: linear-gradient(rgb(200, 0, 255), $offwhhite);
+    background: linear-gradient($purple, $offwhhite);
 }
 
 header {
