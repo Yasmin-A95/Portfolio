@@ -13,10 +13,13 @@ $purple: rgb(200, 0, 255);
 
 body {
     background: linear-gradient($offwhhite, $purple);
+    max-width: 95vw;
+    margin: 0 auto;
 }
 
 #outter-container {
     max-width: 1500px;
+    min-width: 95vw;
     margin: 0 auto;
 }
 
