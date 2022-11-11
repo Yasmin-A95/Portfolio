@@ -12,9 +12,12 @@ $purple: rgb(200, 0, 255);
 }
 
 body {
-    max-width: 95vw;
-    margin: 0 auto;
     background: linear-gradient($offwhhite, $purple);
+}
+
+#outter-container {
+    max-width: 1500px;
+    margin: 0 auto;
 }
 
 header {
