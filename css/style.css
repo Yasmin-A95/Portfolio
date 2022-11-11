@@ -9,8 +9,6 @@
 
 body {
   background: linear-gradient(rgb(255, 242, 242), rgb(200, 0, 255));
-  max-width: 95vw;
-  margin: 0 auto;
 }
 
 #outter-container {
@@ -40,15 +38,14 @@ header {
   display: inline-block;
 }
 
-#projects {
-  margin: 0 auto;
-}
 #projects ul {
+  margin: 0 auto;
   margin-left: 0;
   padding-left: 0;
   list-style: none;
 }
 #projects ul li {
+  max-width: 660px;
   background-color: rgb(255, 242, 242);
   box-shadow: -8px 8px 0 0 black;
   border: 1px solid black;
@@ -83,6 +80,7 @@ footer {
   #container {
     max-width: 960px;
     margin: 0 auto;
+    font-size: 22px;
   }
   header {
     text-align: center;
@@ -90,6 +88,10 @@ footer {
   }
   #intro h2 {
     margin-bottom: 3rem;
+  }
+  #projects {
+    width: clamp(780px, 2400px, 90vw);
+    margin: 0 auto;
   }
   #projects ul {
     display: grid;
