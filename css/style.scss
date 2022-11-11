@@ -62,7 +62,7 @@ header {
             padding: 1em;
 
             #tech-stack {
-                font-size: max(90%, 10px);
+                font-size: max(min(1vw, 0.5em), 90%);
             }
 
             h5 {
