@@ -41,23 +41,8 @@ header {
 
 }
 
-#talks {
-    min-height: 20vh;
-
-    ul {
-        list-style: none;
-
-        li:nth-child(1) {
-            padding: 1em, 0;
-        }
-
-        p {
-            display: inline-block;
-        }
-    }
-}
-
 #projects {
+    margin: calc(40vh - 200px) 0;
 
     ul {
         margin: 0 auto;
@@ -102,6 +87,25 @@ header {
                     object-fit: cover;
                 }
             }
+        }
+    }
+}
+
+#talks {
+
+    h4 {
+        font-size: 1.5em;
+    }
+
+    ul {
+        list-style: none;
+
+        li:nth-child(1) {
+            padding: 1em, 0;
+        }
+
+        p {
+            display: inline-block;
         }
     }
 }

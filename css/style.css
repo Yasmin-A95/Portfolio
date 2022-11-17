@@ -33,19 +33,9 @@ header {
   max-width: 100%;
 }
 
-#talks {
-  min-height: 20vh;
+#projects {
+  margin: calc(40vh - 200px) 0;
 }
-#talks ul {
-  list-style: none;
-}
-#talks ul li:nth-child(1) {
-  padding: 1em, 0;
-}
-#talks ul p {
-  display: inline-block;
-}
-
 #projects ul {
   margin: 0 auto;
   margin-left: 0;
@@ -79,6 +69,19 @@ header {
   max-width: 50%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+#talks h4 {
+  font-size: 1.5em;
+}
+#talks ul {
+  list-style: none;
+}
+#talks ul li:nth-child(1) {
+  padding: 1em, 0;
+}
+#talks ul p {
+  display: inline-block;
 }
 
 footer {
