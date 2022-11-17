@@ -2,15 +2,15 @@
 
 $offwhhite: rgb(255, 242, 242);
 $purple: rgb(200, 0, 255);
-
 * {
     box-sizing: border-box;
     text-rendering: optimizeLegibility;
     font-kerning: normal;
     font-size: 100%;
-    font-family: 'Merriweather', serif;
+    font-family: 'Merriweather', Georgia, 'Times New Roman', Times, serif;
     line-height: 1.4;
     letter-spacing: 0.3px;
+    font-kerning: normal;
 }
 
 body {

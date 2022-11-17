@@ -4,9 +4,10 @@
   text-rendering: optimizeLegibility;
   font-kerning: normal;
   font-size: 100%;
-  font-family: "Merriweather", serif;
+  font-family: "Merriweather", Georgia, "Times New Roman", Times, serif;
   line-height: 1.4;
   letter-spacing: 0.3px;
+  font-kerning: normal;
 }
 
 body {
