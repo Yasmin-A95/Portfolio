@@ -5,6 +5,8 @@
   font-kerning: normal;
   font-size: 100%;
   font-family: "Merriweather", serif;
+  line-height: 1.4;
+  letter-spacing: 0.3px;
 }
 
 body {
@@ -30,6 +32,9 @@ header {
   max-width: 100%;
 }
 
+#talks {
+  min-height: 20vh;
+}
 #talks ul {
   list-style: none;
 }
@@ -58,6 +63,7 @@ header {
   font-size: max(min(1vw, 0.5em), 90%);
 }
 #projects ul li h5 {
+  text-transform: uppercase;
   text-align: center;
 }
 #projects ul li img {

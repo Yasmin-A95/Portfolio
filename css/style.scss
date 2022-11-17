@@ -9,6 +9,8 @@ $purple: rgb(200, 0, 255);
     font-kerning: normal;
     font-size: 100%;
     font-family: 'Merriweather', serif;
+    line-height: 1.4;
+    letter-spacing: 0.3px;
 }
 
 body {
@@ -39,6 +41,8 @@ header {
 }
 
 #talks {
+    min-height: 20vh;
+
     ul {
         list-style: none;
 
@@ -67,11 +71,17 @@ header {
             margin-bottom: 1em;
             padding: 1em;
 
+            // li:hover {
+            //     --tw-translate-y: -8px;
+            //     --tw-translate-x: 8px;
+            // }
+
             #tech-stack {
                 font-size: max(min(1vw, 0.5em), 90%);
             }
 
             h5 {
+                text-transform: uppercase;
                 text-align: center;
             }
 
@@ -82,6 +92,7 @@ header {
             }
 
             div {
+                // CSS Lab Images
                 display: flex;
 
                 img {
