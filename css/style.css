@@ -48,6 +48,9 @@ header {
   margin-bottom: 1em;
   padding: 1em;
 }
+#projects ul li a {
+  padding-right: 1rem;
+}
 #projects ul li .tech-stack {
   font-size: max(min(1vw, 0.5em), 90%);
 }
